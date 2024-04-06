@@ -2,7 +2,7 @@ import { useState } from 'react'
 import rfidReaderInputIcon  from './assets/rfidReaderInputIcon.svg'
 import { RFIDReaderInput } from 'rfid-reader-input';
 import {CardReader} from './CardReader.tsx'
-
+import { BsUsbPlug } from "react-icons/bs";
 function App() {
   //CSS EFFECT
   const [isHover, setIsHover] = useState(false);
@@ -50,8 +50,11 @@ function handleCloseRFID() {
         <button className='px-5 py-2 bg-[#1A1A1A] rounded-lg mb-5' onClick={handleOpenRFID}>
         Open RFIDReaderInput
         </button>
+        <p className=' flex items-center text-[16px] mb-2'>
+        <BsUsbPlug size={30}/> Connect your device RFID Reader
+        </p>
         <p className='text-[16px]'>
-          Edit <code className='text-[13px]'>src/App.tsx</code> and save to test
+       Edit <code className='text-[13px]'>src/App.tsx</code> and save to test
         </p>
       </div>
       <p className="text-[#888888]">
