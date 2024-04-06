@@ -1,7 +1,6 @@
 import { useState } from 'react'
-
+import rfidReaderInputIcon  from './assets/rfidReaderInputIcon.svg'
 import { RFIDReaderInput } from 'rfid-reader-input';
-import { CardReader } from './CardReader';
 
 function App() {
   //CSS EFFECT
@@ -37,13 +36,13 @@ function handleCloseRFID() {
     <div className='flex flex-col items-center gap-10 '>
       <div className=''>
         <a  href="https://github.com/DIGOARTHUR/rfid-reader-input" target="_blank">
-          <img className='flex items-center justify-center' src='https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/3dfdfcfe-f0d5-46b6-a602-e1354ffd7658'
+          <img className='flex items-center justify-center' src={rfidReaderInputIcon }
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             style={boxStyle} alt="React logo"
           />
         </a>
-        <CardReader isOpen={openCardReaderWindow} onRequestClose={handleCloseRFID} handleCodeCardRFID={ setSerialcard} />   
+        <RFIDReaderInput isOpen={openCardReaderWindow} onRequestClose={handleCloseRFID} handleCodeCardRFID={ setSerialcard} />   
       </div>
       <h1 className='text-4xl font-bold text-[#FFFFFFDE]'>{serialCard?serialCard:'‹ RFIDReaderInput 	/›'}</h1>
       <div className="text-[#FFFFFFDE]">

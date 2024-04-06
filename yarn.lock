@@ -1824,8 +1824,10 @@ reusify@^1.0.4:
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
-"rfid-reader-input@file:.yalc/rfid-reader-input":
-  version "1.0.0"
+rfid-reader-input@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/rfid-reader-input/-/rfid-reader-input-0.0.1.tgz#7d2ccf798c875a29631599264d5cbd2da249a67f"
+  integrity sha512-ySZPkIetmnSiLUqepNCNSvSC5jIxOd8L8Oct/fgvBb542st7YHwtRcrKuLRSBfZHl4uPPoP0PzPtkQ8D+i2NQQ==
   dependencies:
     react-icons "^5.0.1"
 
@@ -1914,6 +1916,7 @@ source-map-js@^1.2.0:
   integrity sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
