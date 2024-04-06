@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import rfidReaderInputIcon  from './assets/rfidReaderInputIcon.svg'
 import { RFIDReaderInput } from 'rfid-reader-input';
+import {CardReader} from './CardReader.tsx'
 
 function App() {
   //CSS EFFECT
@@ -42,7 +43,7 @@ function handleCloseRFID() {
             style={boxStyle} alt="React logo"
           />
         </a>
-        <RFIDReaderInput isOpen={openCardReaderWindow} onRequestClose={handleCloseRFID} handleCodeCardRFID={ setSerialcard} />   
+        <CardReader isOpen={openCardReaderWindow} onRequestClose={handleCloseRFID} handleCodeCardRFID={ setSerialcard} />   
       </div>
       <h1 className='text-4xl font-bold text-[#FFFFFFDE]'>{serialCard?serialCard:'‹ RFIDReaderInput 	/›'}</h1>
       <div className="text-[#FFFFFFDE]">
